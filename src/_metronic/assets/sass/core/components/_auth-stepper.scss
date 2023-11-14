@@ -1,0 +1,65 @@
+.auth-stepper{
+    font-family: Inter !important;
+    h2{
+        color: var(--gray-gray-900, #181C32);
+        /* Heading/H-24-24-600 */
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 100% */
+        letter-spacing: -0.24px;
+    }
+    p{
+        color: var(--gray-gray-500, #A1A5B7);
+        /* Body/B-14-14-500 */
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 14px; 
+        a{
+            color: var(--primary-primary-active, #2884EF);
+        }
+    }
+}
+
+.step1-content {
+    gap: 2rem;
+    align-items: flex-start;
+  
+    .step1-button {
+      min-width: 200px;
+      height: 75px;
+      border-radius: 0.5rem;
+      border: 1px dashed var(--primary-primary-active, #2884EF);
+      background: #fff;
+      font-style: normal;
+  
+      &.button-clicked {
+        background: var(--primary-primary-light, #EEF6FF);
+      }
+  
+      img {
+        align-self: center;
+        margin: 0 20px;
+        width: 2rem;
+        height: 2rem;
+        flex-shrink: 0;
+      }
+  
+      h3 {
+        color: var(--white-dark-dark, #181C32);
+        font-size: 0.9375rem;
+        font-weight: 600;
+        line-height: 1rem;
+      }
+  
+      p {
+        color: var(--gray-gray-600, #7E8299);
+        font-size: 0.8125rem;
+        font-weight: 500;
+        line-height: 1.3125rem;
+      }
+    }
+  }
+  
