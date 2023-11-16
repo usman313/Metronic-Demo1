@@ -125,8 +125,15 @@ export function Registration() {
 
             {/*begin::Content */}
             <div className='flex-row-fluid py-lg-5 px-lg-15 my-auto'>
-                    <Step1/>
-                    <Step2/>
+              <div className='current justify-content-center' data-kt-stepper-element='content'>
+                <Step1/>
+              </div>
+              <div data-kt-stepper-element='content' className=" w-50 mx-auto">
+                <Step2/>
+              </div>
+              <div data-kt-stepper-element='content' className=" w-50 mx-auto">
+                <Step1/>
+              </div>
 
                     {/*begin::Actions */}
                     {/* <div className="w-75 mt-3"> */}

@@ -85,7 +85,7 @@ export default function Step2() {
     }, [])
 
     return (
-        <div className='pb-5 w-50 mx-auto' data-kt-stepper-element='content'>
+        <div className='pb-5'>
             <form
                 className='form w-100 fv-plugins-bootstrap5 fv-plugins-framework'
                 noValidate
@@ -93,7 +93,7 @@ export default function Step2() {
                 onSubmit={formik.handleSubmit}
             >
                 {/* begin::Heading */}
-                <div className='text-center mb-11'>
+                <div className='text-center mb-8'>
                     {/* begin::Title */}
                     <h1 className='text-dark fw-bolder mb-3'>Sign Up</h1>
                     {/* end::Title */}
@@ -103,7 +103,7 @@ export default function Step2() {
                 {/* end::Heading */}
 
                 {/* begin::Login options */}
-                <div className='row g-3 mb-9'>
+                <div className='row g-3 mb-6'>
                     {/* begin::Col */}
                     <div className='col-md-6'>
                         {/* begin::Google link */}
@@ -147,7 +147,7 @@ export default function Step2() {
                 </div>
                 {/* end::Login options */}
 
-                <div className='separator separator-content my-14'>
+                <div className='separator separator-content my-8'>
                     <span className='w-125px text-gray-500 fw-semibold fs-7'>Or with email</span>
                 </div>
 
@@ -158,7 +158,7 @@ export default function Step2() {
                 )}
 
                 {/* begin::Form group Firstname */}
-                <div className='fv-row mb-8'>
+                <div className='fv-row mb-5'>
                     <label className='form-label fw-bolder text-dark fs-6'>First name</label>
                     <input
                         placeholder='First name'
@@ -184,7 +184,7 @@ export default function Step2() {
                     )}
                 </div>
                 {/* end::Form group */}
-                <div className='fv-row mb-8'>
+                <div className='fv-row mb-5'>
                     {/* begin::Form group Lastname */}
                     <label className='form-label fw-bolder text-dark fs-6'>Last name</label>
                     <input
@@ -213,7 +213,7 @@ export default function Step2() {
                 </div>
 
                 {/* begin::Form group Email */}
-                <div className='fv-row mb-8'>
+                <div className='fv-row mb-5'>
                     <label className='form-label fw-bolder text-dark fs-6'>Email</label>
                     <input
                         placeholder='Email'
@@ -239,7 +239,7 @@ export default function Step2() {
                 {/* end::Form group */}
 
                 {/* begin::Form group Password */}
-                <div className='fv-row mb-8' data-kt-password-meter='true'>
+                <div className='fv-row mb-5' data-kt-password-meter='true'>
                     <div className='mb-1'>
                         <label className='form-label fw-bolder text-dark fs-6'>Password</label>
                         <div className='position-relative mb-3'>
@@ -313,7 +313,7 @@ export default function Step2() {
                 {/* end::Form group */}
 
                 {/* begin::Form group */}
-                <div className='fv-row mb-8'>
+                <div className='fv-row mb-5'>
                     <label className='form-check form-check-inline' htmlFor='kt_login_toc_agree'>
                         <input
                             className='form-check-input'

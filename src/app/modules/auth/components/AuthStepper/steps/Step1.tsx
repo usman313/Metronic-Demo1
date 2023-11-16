@@ -8,7 +8,7 @@ export default function Step1() {
         setActiveButton(buttonNumber);
     };
     return (
-        <div className='current d-flex justify-content-center align-items-center' data-kt-stepper-element='content'>
+        <div className='d-flex justify-content-center align-items-center'>
             <div className='auth-stepper'>
                 <h2>
                     Choose an account type
@@ -24,7 +24,7 @@ export default function Step1() {
                     >
                         {/* Button number 1 */}
                         <img
-                            src={toAbsoluteUrl('/media/logos/custom-1.png')}
+                            src={toAbsoluteUrl(`/media/framework-logos/${activeButton===1 ? 'spring.png' : '/inactive/spring.png'}`)}
                             alt='avatar'
                         />
                         <div className='d-flex flex-column m-auto'>
@@ -43,7 +43,7 @@ export default function Step1() {
                     >
                         {/* Button number 2 */}
                         <img
-                            src={toAbsoluteUrl('/media/logos/custom-2.png')}
+                            src={toAbsoluteUrl(`/media/framework-logos/${activeButton===2 ? 'Angular.png' : '/inactive/Angular.png'}`)}
                             alt='avatar'
                         />
                         <div className='d-flex flex-column m-auto'>
