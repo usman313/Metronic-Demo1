@@ -173,9 +173,9 @@ const TablesWidget10: React.FC<Props> = ({className}) => {
             {/* end::Table head */}
             {/* begin::Table body */}
             <tbody>
-              {TABLE_DATA.map(item=>{
+              {TABLE_DATA.map((item, index)=>{
                 return(
-                  <tr>
+                  <tr key={index}>
                     <td>
                       <div className='form-check form-check-sm form-check-custom form-check-solid'>
                         <input className='form-check-input widget-9-check' type='checkbox' value='1' />
