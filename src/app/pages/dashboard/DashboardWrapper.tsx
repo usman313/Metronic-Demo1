@@ -58,7 +58,7 @@ const DashboardPage: FC = () => (
       {/* begin::Col */}
         {TOP_CARD_DATA.map(card=>{
           return(
-            <div className='col-lg-3' key={card.id}>
+            <div className='col-md-6 col-lg-3' key={card.id}>
               <CardsWidget20
                 icon={card.icon}
                 title={card.title}
