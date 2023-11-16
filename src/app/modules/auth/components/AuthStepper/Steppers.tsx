@@ -9,8 +9,6 @@ export default function AuthStepper({
   stepDescription,
 }: Props) {
   return (
-    <form noValidate id='kt_modal_create_app_form h-100'>
-    <div className='stepper-nav ps-lg-10'>
       <div className={`stepper-item ${stepNumber === 1 ? 'current' : ''}`} data-kt-stepper-element='nav'>
         {/* begin::Wrapper*/}
         <div className='stepper-wrapper'>
@@ -35,7 +33,5 @@ export default function AuthStepper({
         <div className='stepper-line h-40px'></div>
         {/* end::Line*/}
       </div>
-    </div>
-    </form>
   )
 }
