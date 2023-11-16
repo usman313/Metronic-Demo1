@@ -26,6 +26,9 @@
             $bg-color: var(--#{$prefix}gray-100),
             $all-links: false
           );
+          >.menu-item:hover{
+            color: #ffffff !important;
+          }
         }
       }
     }

@@ -2,12 +2,15 @@ interface Props {
   stepNumber: number;
   stepTitle: string;
   stepDescription: string;
+  stepLength: number;
 }
 export default function AuthStepper({
   stepNumber,
   stepTitle,
   stepDescription,
+  stepLength,
 }: Props) {
+  console.log('stepper length: ', stepLength)
   return (
       <div className={`stepper-item ${stepNumber === 1 ? 'current' : ''}`} data-kt-stepper-element='nav'>
         {/* begin::Wrapper*/}
@@ -30,7 +33,7 @@ export default function AuthStepper({
         {/* end::Wrapper*/}
 
         {/* begin::Line*/}
-        {stepNumber === 5 ? null : <div className='stepper-line h-40px'></div>}
+        {stepNumber === stepLength ? null : <div className='stepper-line h-40px'></div>}
         {/* end::Line*/}
       </div>
   )
