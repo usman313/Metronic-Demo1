@@ -64,7 +64,7 @@ export function Registration() {
         if (!stepper.current) {
           return
         }
-        
+        if(stepper.current.getCurrentStepIndex() === 2) stepper.current.goto(0)
         stepper.current.goNext()
       }
       useEffect(()=>{
@@ -73,7 +73,7 @@ export function Registration() {
     return (
         <div
             ref={stepperRef}
-            className='stepper stepper-pills stepper-column d-flex flex-column flex-xl-row flex-row-fluid'
+            className='stepper stepper-pills stepper-column d-flex flex-column flex-lg-row flex-row-fluid'
             id='kt_modal_create_app_stepper'
         >
             {/* begin::Aside*/}
@@ -137,7 +137,7 @@ export function Registration() {
 
                     {/*begin::Actions */}
                     {/* <div className="w-75 mt-3"> */}
-                      <div className='d-flex flex-stack m-auto'>
+                      <div className='d-flex flex-stack m-auto p-15'>
                           <div className='me-2'>
                               <button
                                   type='button'
