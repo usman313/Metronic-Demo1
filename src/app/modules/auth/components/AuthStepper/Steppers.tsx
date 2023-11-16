@@ -30,7 +30,7 @@ export default function AuthStepper({
         {/* end::Wrapper*/}
 
         {/* begin::Line*/}
-        <div className='stepper-line h-40px'></div>
+        {stepNumber === 5 ? null : <div className='stepper-line h-40px'></div>}
         {/* end::Line*/}
       </div>
   )
